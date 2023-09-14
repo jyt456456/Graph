@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "debug_test": {
+      "commandName": "Project",
+      "hotReloadEnabled": true,
+      "nativeDebugging": true
+    }
+  }
+}

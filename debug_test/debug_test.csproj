@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.39" />
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+    <PackageReference Include="Npgsql" Version="7.0.4" />
+    <PackageReference Include="ToggleSwitch" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Cntgraph">
+      <HintPath>..\..\DLL\Cntgraph.dll</HintPath>
+    </Reference>
+    <Reference Include="Command">
+      <HintPath>..\..\DLL\Command.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameSel">
+      <HintPath>..\..\DLL\FrameSel.dll</HintPath>
+    </Reference>
+    <Reference Include="graphDLL">
+      <HintPath>..\..\DLL\graphDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="graphglobal">
+      <HintPath>..\..\DLL\graphglobal.dll</HintPath>
+    </Reference>
+    <Reference Include="graphInterface">
+      <HintPath>..\..\DLL\graphInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="MVbase">
+      <HintPath>..\..\DLL\MVbase.dll</HintPath>
+    </Reference>
+    <Reference Include="postdb">
+      <HintPath>..\..\DLL\postdb.dll</HintPath>
+    </Reference>
+    <Reference Include="UCSearch">
+      <HintPath>..\..\DLL\UCSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="UCTogglebtn">
+      <HintPath>..\..\DLL\UCTogglebtn.dll</HintPath>
+    </Reference>
+    <Reference Include="UCtypecheck">
+      <HintPath>..\..\DLL\UCtypecheck.dll</HintPath>
+    </Reference>
+    <Reference Include="xline">
+      <HintPath>..\..\DLL\xline.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
