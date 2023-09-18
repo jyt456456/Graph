@@ -11,7 +11,7 @@ using graphInterface;
 
 namespace debug_test
 {
-    class MainViewModel : MVbase.MVbse
+    class MainViewModel : MVbase.MVBase
     {
         //private Model.MainModel model = null;
         
@@ -27,7 +27,11 @@ namespace debug_test
         public bool RealTime { get => m_RealTime; set => m_RealTime = value; }
 
         private int m_curChart = 1;
-        private bool m_RealTime = false;      
+        private bool m_RealTime = false;
+        public Overrayview.OverView m_overView;
+        public Overrayview.OverView OverView { get => m_overView; set => m_overView = value; }
+
+
 
         public MainViewModel()
         {
@@ -62,6 +66,7 @@ namespace debug_test
             uctoggle.Triter = uCGraph;
             uCGraph.m_interactor = uCtypecheckbox;
             //
+            m_overView = new Overrayview.OverView();
         }
 
         public void CountChangeEvent(int _icount)

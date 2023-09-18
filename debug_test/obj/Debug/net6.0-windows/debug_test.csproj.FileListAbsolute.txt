@@ -54,3 +54,4 @@ C:\Users\taeya\OneDrive\바탕 화면\file\project\debug_test\debug_test\obj\Deb
 C:\Users\taeya\OneDrive\바탕 화면\file\project\debug_test\debug_test\obj\Debug\net6.0-windows\debug_test.pdb
 C:\Users\taeya\OneDrive\바탕 화면\file\project\debug_test\debug_test\obj\Debug\net6.0-windows\debug_test.genruntimeconfig.cache
 C:\Users\taeya\OneDrive\바탕 화면\file\project\debug_test\debug_test\obj\Debug\net6.0-windows\ref\debug_test.dll
+C:\Users\taeya\OneDrive\바탕 화면\file\project\debug_test\debug_test\bin\Debug\net6.0-windows\Overrayview.dll

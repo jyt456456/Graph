@@ -9,6 +9,7 @@
         xmlns:lib ="clr-namespace:Cntgraph;assembly=Cntgraph"
         xmlns:test ="clr-namespace:ToggleSwitch;assembly=ToggleSwitch"
         xmlns:UCToggle ="clr-namespace:UCTogglebtn;assembly=UCTogglebtn"
+        xmlns:overlay="clr-namespace:Overrayview;assembly=Overrayview"
         >
     <Window.DataContext>
         <local:MainViewModel></local:MainViewModel>
@@ -60,15 +61,17 @@
                 </ItemsPanelTemplate>
             </ItemsControl.ItemsPanel>
         </ItemsControl>
-
-        <ItemsControl x:Name="can_ListGraph" ItemsSource="{Binding m_listUCGraph}">
+        <ItemsControl x:Name="can_ListGraph"
+                      ItemsSource="{Binding m_listUCGraph}">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <Canvas>
-                    </Canvas>
+                    <Canvas></Canvas>
                 </ItemsPanelTemplate>
             </ItemsControl.ItemsPanel>
         </ItemsControl>
-
+        <DockPanel>
+            <overlay:OverView x:Name="ovlay"
+                              DataContext="{Binding OverView}"></overlay:OverView>
+        </DockPanel>
     </Grid>
 </Window>
