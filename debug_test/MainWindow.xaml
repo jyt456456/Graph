@@ -69,9 +69,15 @@
                 </ItemsPanelTemplate>
             </ItemsControl.ItemsPanel>
         </ItemsControl>
-        <DockPanel>
-            <overlay:OverView x:Name="ovlay"
-                              DataContext="{Binding OverView}"></overlay:OverView>
+        <DockPanel Width="500" Height="500" Margin="1200,400,0,0">
+            <ItemsControl x:Name="_ListOverlayview"
+                          ItemsSource="{Binding m_listOverlay}" />
         </DockPanel>
+        <Line X1="{Binding X1}"
+              X2="{Binding X2}"
+              Y1="{Binding Y1}"
+              Y2="{Binding Y2}"
+              StrokeThickness="5"
+              Stroke="Aqua"/>
     </Grid>
 </Window>

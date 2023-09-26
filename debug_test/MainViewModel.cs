@@ -8,6 +8,7 @@ using graphglobal;
 using static graphglobal.global;
 using Accessibility;
 using graphInterface;
+using Overrayview;
 
 namespace debug_test
 {
@@ -26,12 +27,21 @@ namespace debug_test
 
         public bool RealTime { get => m_RealTime; set => m_RealTime = value; }
 
+
         private int m_curChart = 1;
         private bool m_RealTime = false;
-        public Overrayview.OverView m_overView;
-        public Overrayview.OverView OverView { get => m_overView; set => m_overView = value; }
+        // public Overrayview.OverView m_overView;
+        //  public Overrayview.OverView OverView { get => m_overView; set => m_overView = value; }
 
 
+        private double x1;
+        private double x2;
+        private double y1;
+        private double y2;
+        public double X1 { get => x1; set => x1 = value; }
+        public double X2 { get => x2; set => x2 = value; }
+        public double Y1 { get => y1; set => y1 = value; }
+        public double Y2 { get => y2; set => y2 = value; }
 
         public MainViewModel()
         {
@@ -65,8 +75,6 @@ namespace debug_test
             uCFrame.Toggleinter = uctoggle;
             uctoggle.Triter = uCGraph;
             uCGraph.m_interactor = uCtypecheckbox;
-            //
-            m_overView = new Overrayview.OverView();
         }
 
         public void CountChangeEvent(int _icount)
